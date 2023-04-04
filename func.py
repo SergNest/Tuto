@@ -1,14 +1,4 @@
-base_rate = 40
-price_per_km = 10
-total_trip = 0
-
-
-def trip_price(path):
-    global total_trip
-    sum = path * price_per_km + base_rate
-
-    total_trip += 1
-
-    return sum
-
-print(trip_price(4.3))
+def get_fullname(first_name, last_name, middle_name = ""):
+    return f'{first_name} {middle_name} {last_name}' if middle_name else f'{first_name} {last_name}'
+    
+     

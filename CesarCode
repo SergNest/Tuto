@@ -1,6 +1,7 @@
 message = "Hello my little friends!"
 offset = int(37)
 encoded_message = ""
+
 for ch in message:
     if not ch.isalpha():
         new_char = ch

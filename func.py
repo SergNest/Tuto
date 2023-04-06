@@ -1,4 +1,16 @@
-def get_fullname(first_name, last_name, middle_name = ""):
-    return f'{first_name} {middle_name} {last_name}' if middle_name else f'{first_name} {last_name}'
-    
-     
+def format_string(string, length):
+    if len(string) >= length:
+        return string
+    else:
+        # a = ""
+        # for i in range(length - len(string)):
+        #     a += " "
+        # return a + string
+        num_spaces = (length - len(string)) // 2
+        a = ' ' * num_spaces + string
+        return a
+
+a = format_string('aaab', 15)   
+print(len(a))
+
+print(11//2)

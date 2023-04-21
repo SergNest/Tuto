@@ -13,8 +13,6 @@ def parrot_trouble(talking, hour):
 print(parrot_trouble(True, 21)) # True
 print(parrot_trouble(True, 7)) # False
 print(parrot_trouble(False, 6)) # False
-
-
 # def split_list(grade):
 #     k1 = []
 #     k2 = []

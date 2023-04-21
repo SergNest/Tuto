@@ -1,24 +1,11 @@
-def is_valid_password(password):
-    if len(password) != 8:
-        return False
-    is_upper = False
-    is_lower = False
-    is_num = False
-    for i in password:
+from random import randint
 
-        if not is_num:
-            try:
-                is_num = bool(int(i))
-                continue
-            except:
-                pass
+def get_random_password():
+    result = ""
+    count = 0
+    while count < 8:
+        random_symbol = chr(randint(40, 126))
+        result = result + random_symbol
+        count = count + 1
+    return result
 
-        if i.isupper() and i.isalpha():
-            is_upper = True
-        elif i.islower() and i.isalpha():
-            is_lower = True
-
-    return is_upper and is_lower and is_num
-
-
-print(is_valid_password("b8g^ro4^"))

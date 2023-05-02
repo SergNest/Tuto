@@ -9,4 +9,4 @@ def read_employees_from_file(path):
     fh.close()
     return emp_list
 
-print(total_salary('WorkWithFiles/test.txt'))
+print(read_employees_from_file('WorkWithFiles/test.txt'))

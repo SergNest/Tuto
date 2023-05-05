@@ -19,7 +19,7 @@ def formatted_grades(students):
       count += 1
     return list
 
-formatted_grades({"Nick": "A", "Olga": "B", "Mike": "FX", "Anna": "C"})
+print(formatted_grades({"Nick": "A", "Olga": "B", "Mike": "FX", "Anna": "C"}))
 
 [' 1|Nick | A | 5 ', ' 2|Olga | B | 5 ', ' 3|Boris | FX | 2 ', ' 4|Anna | C | 4 ']
 [' 1|Nick | A | 5 ', ' 2|Olga | B | 5 ', ' 3|Boris | FX | 2 ', ' 4|Anna | C | 4 ']

@@ -9,3 +9,4 @@ def formatted_numbers():
     
 
 print(formatted_numbers())
+
